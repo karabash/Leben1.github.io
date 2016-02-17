@@ -1,0 +1,52 @@
+@charset "utf-8";
+body{
+            
+
+    padding: 30px;
+    background-image: url("symphony.png");
+    background-repeat: repeat;
+}
+
+.h1{
+     position: relative;
+    left: 500px;
+    color: black;
+    font-size: 150%;
+   
+}
+.body{
+    
+  background-image: url("tk.jpg");
+    
+}
+
+   .fps1{
+      color: black;
+       font-size: 150%;
+       width: 1000px;
+        position: relative;
+       margin: auto;   
+     }
+
+.fsn{
+border-style: solid;    
+    border-color: black;
+    font-size: 120%;
+    width: 200px;
+    background-color: white;
+        color: black;
+    }
+
+.ssn{
+    border-style: solid;    
+    border-color: black;
+    font-size: 120%;
+    width: 259px;
+    line-height: 8px;
+    height: 20px;
+    
+    padding-bottom: 5px;
+    margin-top: 17px;
+    background-color: white;
+        color: black;
+}
