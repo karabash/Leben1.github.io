@@ -1,20 +1,43 @@
 
 
-var ingredienser = [500, 10,6];
 
-function changeValue(){
-    var selectBox = document.getElementById("personer");
-    var value = selectBox.options[selectBox.selectedIndex].value;
-    document.getElementsByClassName("första")[0].innerHTML = ingredienser[0];
-       document.getElementsByClassName("andra")[0].innerHTML = ingredienser[1];
-           document.getElementsByClassName("tredje")[0].innerHTML = ingredienser[2];
+var totalperson =1;
+var first = 200;
+var second = 1;
+var thirt = 3;
 
-     
-     
+function clickedButton() {
+       totalperson =totalperson+1;
+    if(totalperson<=5){
+    "use strict";
+  
+    first = first + 200; 
+    second = second + 1; 
+    thirt = thirt + 3;
     
-    console.log(span);
-};
+    // För att hämta en HTML-tagg i vår HTML-fil...
+        var tP = document.getElementById("personsT");
+    var f = document.getElementById("1");
+    var s = document.getElementById("2");
+    var t = document.getElementById("3");
+    
+    
+    // ...och ändra på innehållet mellan start- och slut-tagg:
+    f.innerHTML = first;
+    s.innerHTML = second;
+     t.innerHTML = thirt;
+        tP.innerHTML = totalperson;
+    }
+
+}
 
 
-var list = document.getElementById('ul');
-//För varje span i i ul, ändra värdet inuti span
+
+
+
+
+
+
+
+
+
