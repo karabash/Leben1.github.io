@@ -3,7 +3,8 @@
 
     <head>
       <meta charset="utf-8">
-       
+               <script src="main.js"></script>
+
       <title>Hur gör man</title>
                   <link rel="stylesheet" href="style.css">
            
@@ -17,35 +18,48 @@
        
         <div class = "fsn">
         <nav>
-    <a  href="Förstasida.html">Första sida</a> |
-    <a href="HurGörMan.html">Hur gör man</a>             
+       <a  href="index.html">Första sida</a> |
+    <a href="HurGörMan.html">Hur gör man</a>            
       </nav>
         </div>
         
         <div class = "ssn">
         <nav>
         <br>
+            
          <a href="#Ingrediense"> gå till Ingrediense</a> |
                 <a href="#Såhärgördu"> så här gör du</a>
-
            </nav>
-        </div  
-    
+        </div>
+
+             <h1 id="Ingrediense">Ingrediense</h1>
         
-            <h1 id="Ingrediense"></h1>
-         <div>   <ul style= "disc">
+        
+         <div>   
+                 <select name="5" id="personer" onChange="changeValue()">
+                 <option label value="1">1 person</option>
+                 <option label value="2">2 person</option>
+                 <option label value="3">3 person</option>
+                 <option label value="4">4 person</option>
+                 <option label value="5">5 person</option>
+                 
+  </select>
              
-                
-                   <li>200 g rumstempererat smör (+ extra till formen)</li>
-                    <li>kokos eller ströbröd</li>
-                    <li>2 1/2 dl strösocker</li>
-                    <li>3 ägg</li>
+             
+             
+             
+             <ul style= "disc" id="ul">
+                             
+                   <li><span class="första">200</span>g rumstempererat smör (+ extra till formen)</li>
+                <li><span class="andra">1</span> dl strösocker</li>
+                    <li><span class="andra">3</span> ägg</li>
                     <li>4 dl vetemjöl (ca 240 g)</li>
                     <li>1 tsk bakpulver</li>
                     <li>1 krm salt</li>
                      <li>1 dl mjölk eller grädde</li>
                     <li>2 msk kakao</li>
                     <li>1 msk vaniljsocker</li> 
+                  <li>kokos eller ströbröd</li>
              </ul></div>
        
               
