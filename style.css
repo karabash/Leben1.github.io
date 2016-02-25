@@ -37,7 +37,7 @@ border-style: solid;
     border-style: solid;    
     border-color: black;
     font-size: 120%;
-    width: 259px;
+    width: 345px;
     line-height: 8px;
     height: 20px;
     
@@ -50,4 +50,17 @@ border-style: solid;
    width: 200px;
         color: blue;
 
+}
+
+.öka{
+    font-style:normal,strong;
+     right: 200px;
+        color: black;
+}
+
+.tomStar1{
+	width:42px;
+	height:42px;
+    border-style: solid;    
+	
 }
