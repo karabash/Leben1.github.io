@@ -1,15 +1,31 @@
-$(function()
-  {
-$('.tomStar1').hover(function()//on over			
-{
+jQuery(function() {
 
-    $(this).prevAll().attr('src', '2.png');
-	$(this).attr('src', '2.png');
+var rating = {
+	init: function() {
+  	$('.rating').on('mouseover mousedown', '.star', this.doEvent);
+  },
+  
+	doEvent: function(event) {
+  	var srcEl = $(this),
+    		rate;
+    
+  	switch(event.type) {
+    	case 'mouseover':
+      	// turn off all stars
+      	srcEl.parent().find('.active').removeClass('active');
+        // turn on only affected stars
+      	srcEl.addClass('active')
+        	.prevAll('.star').addClass('active');
+      	break;
+    	case 'mousedown':
+      	// since elements starts counting with 'zero' as first
+      	rate = srcEl.index() + 1;
+      	alert(rate);
+      	break;
+    }
+  }
+};
 
-	
-},
-	function()//on out
-{
-	$('.tomStar1').attr('src', '1.png');
-})
-})
+rating.init();
+
+});

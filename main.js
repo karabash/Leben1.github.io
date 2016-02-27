@@ -79,9 +79,9 @@ function clickedButton1() {
         var t = document.getElementById("3");
         var fourth1 = document.getElementById("4");
         var fifth1 = document.getElementById("5");
-		 var sixth1 = document.getElementById("6");
-	var seventh1 = document.getElementById("7");
-var eighth1 = document.getElementById("8");
+		var sixth1 = document.getElementById("6");
+	    var seventh1 = document.getElementById("7");
+        var eighth1 = document.getElementById("8");
 
        
 		 

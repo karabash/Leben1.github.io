@@ -52,15 +52,33 @@ border-style: solid;
 
 }
 
-.öka{
-    font-style:normal,strong;
-     right: 200px;
-        color: black;
-}
 
 .tomStar1{
 	width:42px;
 	height:42px;
     border-style: solid;    
 	
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating .star {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  font-size: 22px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.rating .star:before {
+  content: '☆';
+	color: black;
+}
+
+.rating .star.active:before {
+  content: '★';
+  color: yellow;
 }
