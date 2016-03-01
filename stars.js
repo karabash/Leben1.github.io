@@ -1,31 +1,38 @@
-jQuery(function() {
+/*,
 
-var rating = {
-	init: function() {
-  	$('.rating').on('mouseover mousedown', '.star', this.doEvent);
-  },
-  
-	doEvent: function(event) {
-  	var srcEl = $(this),
-    		rate;
-    
-  	switch(event.type) {
-    	case 'mouseover':
-      	// turn off all stars
-      	srcEl.parent().find('.active').removeClass('active');
-        // turn on only affected stars
-      	srcEl.addClass('active')
-        	.prevAll('.star').addClass('active');
-      	break;
-    	case 'mousedown':
-      	// since elements starts counting with 'zero' as first
-      	rate = srcEl.index() + 1;
-      	alert(rate);
-      	break;
-    }
-  }
-};
 
-rating.init();
+$('.tomStar1').hover(function()//on over			
+{
+
+    $(this).prevAll().attr('src', '2.png');
+		
+	$(this).attr('src', '2.png');
+	
+	
+	function()//on out
+{
+	$('.tomStar1').attr('src', '1.png');
+})
+	.click(function(){
+	var src = $(this).attr('src');
+	console.log(src);
+	$(this).prevAll().attr('src', '2.png');
+	$(this).attr('src', '2.png');
+});
+
+/*$('.star').hover(function(){
+	$(this).addClass('active');
+	$(this).prevAll.addClass('active');
+},
+function(){
+	$(this).removeClass('active');
+	
+});*/
+
+$('.rating a').click(function(){
+    var star = $(this);
+    star.closest('ul').find('.checked').removeClass('checked');
+    star.addClass('checked');
+	return false;
 
 });
