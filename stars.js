@@ -29,10 +29,17 @@ function(){
 	
 });*/
 
+<<<<<<< HEAD
 $('.rating a').click(function () {
 	var star = $(this);
 	star.closest('ul').find('.checked').removeClass('checked');
 	star.addClass('checked');
+=======
+$('.rating a').click(function(){
+    var star = $(this);
+    star.closest('ul').find('.checked').removeClass('checked');
+    star.addClass('checked');
+>>>>>>> origin/master
 	return false;
 
 });
