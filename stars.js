@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-//$('.rating a').click(function () {
-//	var star = $(this);
-//	star.addClass('checked');
-//	return false;
-//});
-=======
 
->>>>>>> origin/master
 var currentSelectedStarCount = 0;
 
 $('.rating a').hover(function ()
@@ -26,10 +18,8 @@ $('.rating a').hover(function ()
 		star.addClass("checked-star");
 		star.removeClass("unchecked-star");
 	}
-<<<<<<< HEAD
-=======
+
 	return false;
->>>>>>> origin/master
 });
 
 $('.rating a').mouseout(function () {
@@ -69,10 +59,9 @@ $('.rating a').click(function ()
 	star.removeClass("unchecked-star");
 	currentSelectedStarCount = $(".checked-star").length;
 	$("#debug").text(currentSelectedStarCount);
-<<<<<<< HEAD
+
 	return false;
-=======
-=======
+
 /*,
 
 
@@ -111,5 +100,5 @@ $('.rating a').click(function () {
 	return false;
 
 
->>>>>>> origin/master
+
 });
